@@ -29,4 +29,3 @@ The following table maps meta-data requirements defined in draft-rosenberg-vcon-
 |Hangup Party | | |Add party_history array parameter to Dialog Object.  Added 4.3.10 |
 |Disposition |Dialog Object: disposition |4.3.9 ||
 |Dialing List | | |Add contact_list parameter to Party Object. Added 4.2.12 |
-
