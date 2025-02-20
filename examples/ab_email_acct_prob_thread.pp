@@ -20,7 +20,7 @@
         0,
         1
       ],
-      "mimetype": "multipart/mixed; \n\tboundary=\"----=_Part_388
+      "mediatype": "multipart/mixed; \n\tboundary=\"----=_Part_388
         314_1108189513.1663969465698\"",
       "encoding": "none",
       "body": "------=_Part_388314_1108189513.1663969465698\r\nCo
@@ -70,7 +70,7 @@
         1,
         0
       ],
-      "mimetype": "multipart/alternative; \n\tboundary=\"----=_Pa
+      "mediatype": "multipart/alternative; \n\tboundary=\"----=_Pa
         rt_390234_811845464.1663969499935\"",
       "encoding": "none",
       "body": "------=_Part_390234_811845464.1663969499935\r\nCon

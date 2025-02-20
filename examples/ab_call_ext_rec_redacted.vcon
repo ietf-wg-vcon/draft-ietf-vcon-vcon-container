@@ -17,7 +17,7 @@
         0,
         1
       ],
-      "mimetype": "audio/x-mp3",
+      "mediatype": "audio/x-mp3",
       "filename": "ab_call.mp3",
       "signature": "GLy6IPaIUM1GqzZqfIPZlWjaDsNgNvZM0iCONNThnH0a75fhUM6cYzLZ5GynSURREvZwmOh54-2lRRieyj82UQ",
       "alg": "SHA-512"

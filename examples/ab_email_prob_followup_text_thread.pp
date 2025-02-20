@@ -20,7 +20,7 @@
         0,
         1
       ],
-      "mimetype": "text/plain",
+      "mediatype": "text/plain",
       "encoding": "none",
       "body": "Hi Bob:\nI just wanted to follow up to see that yo
         ur account is ok now.\n\nRegards,\nAlice\n\n"
@@ -33,7 +33,7 @@
         1,
         0
       ],
-      "mimetype": "text/plain; charset=UTF-8",
+      "mediatype": "text/plain; charset=UTF-8",
       "encoding": "none",
       "body": "Hi Alice:\nAll is fine. Thanks.\n\n    On Friday, 
         September 23, 2022, 23:24:59 PM UTC, Alice <a@example.com
@@ -49,7 +49,7 @@
         0,
         1
       ],
-      "mimetype": "text/plain",
+      "mediatype": "text/plain",
       "encoding": "none",
       "body": "Awesome!\n\n    On Friday, September 23, 2022, 23:
         34: PM UTC, Bob <b@example.com> wrote:  \n\n  Hi Alice:\n

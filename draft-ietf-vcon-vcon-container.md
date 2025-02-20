@@ -812,7 +812,7 @@ The originator parameter is only provided if the first party of the dialog Objec
 The media type for the piece of dialog included or referenced is provided in the mediatype parameter.
 The mediatype parameter MUST be provided for inline dialog files and MUST be provided if the Content-Type header in the [HTTPS] response for the externally referenced URL is not provided.
 
-* mediatype: "Mediatype" (optional for externally referenced files)
+* mediatype: (optional for externally referenced files)
 
     The media types SHOULD be one of the following strings:
 
@@ -1030,9 +1030,9 @@ The dialog parameter is used to indicate which Dialog Objects this analysis was 
 
 The media type for the included or referenced analysis file is provided in the mediatype parameter.
 
-* mediatype: "Mediatype" (optional for externally referenced files, if it this is provided in the [HTTPS] Content-Type header)
+* mediatype: (optional for externally referenced files, if it this is provided in the [HTTPS] Content-Type header)
 
-    The mediatype string contains the media type or [MIME] type of the analysis file.
+    The mediatype string contains the media type [MIME] of the analysis file.
 
 ### filename
 
@@ -1405,7 +1405,7 @@ Change controller: IETF
 
 ## Version 0.0.1 to 0.0.2
 
-  "mimetype" parameters were renamed to "mediatype"
+  "mediatype" parameters were renamed to "mediatype"
 
 
 --- back

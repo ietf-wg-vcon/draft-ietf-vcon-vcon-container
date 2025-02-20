@@ -21,7 +21,7 @@
       ],
       "url": "https://github.com/ietf-wg-vcon/draft-ietf-vcon-vco
         n-container/raw/refs/heads/main/examples/ab_call.mp3",
-      "mimetype": "audio/x-mp3",
+      "mediatype": "audio/x-mp3",
       "filename": "ab_call.mp3",
       "signature": "GLy6IPaIUM1GqzZqfIPZlWjaDsNgNvZM0iCONNThnH0a7
         5fhUM6cYzLZ5GynSURREvZwmOh54-2lRRieyj82UQ",
