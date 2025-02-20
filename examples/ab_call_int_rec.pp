@@ -19,7 +19,7 @@
         0,
         1
       ],
-      "mimetype": "audio/x-wav",
+      "mediatype": "audio/x-wav",
       "filename": "ab_call.wav",
       "encoding": "base64url",
       "body": "UklGRioeAABXQVZFZm10IBQAAAAxAAEAQB8AAFkGAABBAAAAAg

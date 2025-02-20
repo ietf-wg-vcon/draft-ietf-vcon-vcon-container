@@ -188,7 +188,7 @@ extension_object_type = (
   )
 
 mime_type = (
-    mimetype: tstr
+    mediatype: tstr
   )
 
 party_index_or_list_type =
