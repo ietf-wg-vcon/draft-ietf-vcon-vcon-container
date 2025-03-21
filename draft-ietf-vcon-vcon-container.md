@@ -695,6 +695,7 @@ It is up to the domain creating the vCon to define the set of tokens or values t
 
 The value of the validation string MAY be "none" or enterprise or domain defined token or string values.
 
+
 ### jCard
 
 TODO: Do we want to support including a jCard for the party?
@@ -780,6 +781,25 @@ It is sometimes useful to reference the list from which this party was included.
 The contact_list may be used as a label for foreign key reference to the contact list that this party was on.
 
 * contact_list "String" (optional)
+
+### did
+
+If a Decentralized Identifier (DID) is known for the party, it can be included in the did parameter.
+
+* did: "String" (optional)
+
+The value of the did parameter MUST be a valid DID URI that enables verifiable, decentralized digital identity for the party. DIDs are designed to be decoupled from centralized registries and identity providers, allowing the controller of the DID to prove control without requiring permission from other parties. The DID can refer to any subject (person, organization, thing, etc.) as determined by the controller of the DID.
+
+### Attaching DID Documents
+
+An alternative approach to including DIDs in the Party Object is to add Attachment Objects containing the complete DID documents for each party. This approach provides more comprehensive identity information including cryptographic material, verification methods, and services that enable a DID controller to prove control. When using this approach:
+
+1. Create an Attachment Object for each party's DID document
+2. Set the mediatype to "application/did+json" (or appropriate mediatype)
+3. Include a reference to the party in the attachment's party parameter
+4. Consider adding a custom type/purpose indicator that this is a DID document
+
+The DID document approach provides richer identity information that can be used for verification beyond simple identification.
 
 ## Dialog Object
 
@@ -1279,7 +1299,7 @@ The distinction among these has gotten clouded over recent years.
 The import consideration is that each is a different security domain.
 Information about a conversation captured in an enterprise communications system (e.g. meta data and Dialog Object(s) recorded in an IP PBX) is a different security domain from a SaaS transcription service (i.e. an Analysis Object).
 Before a vCon leaves a security domain, it SHOULD be signed to prevent it from being altered.
-If the new security domain needs to alter it, a new vCon is created with the removed or added data and the prior version is referenced (i.e. via the redacted ([redacted](#redacted)) or appended ([appended](#appended))).
+If the new security domain needs to alter it, a new vCon is created with the removed or added data and the prior version is referenced (i.e. via the redacted ([redacted](#redacted)) or appended ([appended(#appended))).
 See the redacted vCon object tree figure-1 and appended vCon object tree figure-2.
 If information is redacted for privacy reasons, the vCon referenced in the redacted ([redacted](#redacted)), if inline, SHOULD be encrypted to protect the privacy information in the unredacted version of the vCon.
 
