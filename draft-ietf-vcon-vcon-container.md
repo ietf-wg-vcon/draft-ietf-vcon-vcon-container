@@ -422,11 +422,18 @@ The keys and values for the top level vCon JSON object are defined in the follow
 
 ### vcon
 
-The the value of vcon parameter contains the syntactic version of the JSON format used in the vCon.
+The value of vcon parameter contains the syntactic version of the JSON format used in the vCon, following semantic versioning principles.
 
 * vcon: "String"
 
-For syntax defined in this document, the string MUST have the value: "0.0.2"
+For syntax defined in this document, the string MUST have the value: "0.2.0"
+
+The version follows the format "MAJOR.MINOR.PATCH" where:
+- MAJOR version increments represent incompatible changes that break backward compatibility
+- MINOR version increments represent added functionality in a backward-compatible manner
+- PATCH version increments represent backward-compatible bug fixes
+
+Implementations SHOULD reject processing a vCon with a MAJOR version higher than they support. Implementations SHOULD accept processing a vCon with the same MAJOR version but a higher MINOR or PATCH version than they were designed for, as these changes maintain backward compatibility.
 
 ### uuid
 
@@ -1279,7 +1286,7 @@ The distinction among these has gotten clouded over recent years.
 The import consideration is that each is a different security domain.
 Information about a conversation captured in an enterprise communications system (e.g. meta data and Dialog Object(s) recorded in an IP PBX) is a different security domain from a SaaS transcription service (i.e. an Analysis Object).
 Before a vCon leaves a security domain, it SHOULD be signed to prevent it from being altered.
-If the new security domain needs to alter it, a new vCon is created with the removed or added data and the prior version is referenced (i.e. via the redacted ([redacted](#redacted)) or appended ([appended](#appended))).
+If the new security domain needs to alter it, a new vCon is created with the removed or added data and the prior version is referenced (i.e. via the redacted ([redacted](#redacted)) or appended ([appended(#appended))).
 See the redacted vCon object tree figure-1 and appended vCon object tree figure-2.
 If information is redacted for privacy reasons, the vCon referenced in the redacted ([redacted](#redacted)), if inline, SHOULD be encrypted to protect the privacy information in the unredacted version of the vCon.
 
